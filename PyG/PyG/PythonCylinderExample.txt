@@ -1,0 +1,18 @@
+# Cylinder class, with properties of radius and height
+class Cylinder:
+  def __init__(self,radius,height):
+    self.radius = radius
+    self.height = height
+  def __str__(self):
+    return "Radius: "+ str(self.radius) + ", Height: " + str(self.height)
+ 
+  def getRadius(self):
+    return self.radius
+  def getHeight(self):
+    return self.height
+  def getVolume(self):
+      return self.radius*self.radius*3.14*self.height
+ 
+
+cd=Cylinder(5,10)
+#Creating a cylinder object from the Cylinder class
